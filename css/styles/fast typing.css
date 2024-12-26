@@ -1,0 +1,82 @@
+    body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #fce4ec;
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #game-container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 25px;
+            background-color: #ffe0f0;
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            color: #d81b60;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        #word {
+            font-size: 2.5em;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ff4081;
+        }
+        #inputField {
+            font-size: 1.5em;
+            padding: 10px 15px;
+            margin-top: 20px;
+            width: 50%;
+            border: none;
+            border-radius: 20px;
+            background-color: #f8bbd0;
+            box-shadow: 0 5px 10px rgba(255, 105, 180, 0.3);
+        }
+        #inputField:focus {
+            outline: none;
+            border: 3px solid #d500f9;
+        }
+        #timer, #score, #level {
+            margin-top: 15px;
+            font-size: 1.6em;
+            color: #7b1fa2;
+        }
+        #timer {
+            color: #c2185b;
+        }
+        #score {
+            color: #388e3c;
+        }
+        #level {
+            color: #ff9800;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            margin-top: 25px;
+            padding: 12px 20px;
+            font-size: 1.3em;
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #d500f9;
+            transform: scale(1.1);
+        }
+        button:active {
+            transform: scale(1);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+        }
+        .highlight {
+            background-color: #ffd54f;
+            padding: 5px 15px;
+            border-radius: 15px;
+        }

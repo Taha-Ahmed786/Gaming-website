@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Target Shooter Game</title>
+    <!-- Font Awesome -->
+  
+ 
+    <link href="../css/styles/target shooter.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Game Title -->
+    <h1><em>Target Shooter</em></h1>
+    <!-- Game Stats -->
+    <p id="score"><i>Score: 0</i></p>
+    <p id="timer"><em class="fas fa-clock"></em> Time Left: 30</p>
+    <p id="miss-counter"><em class="fas fa-times-circle"></em> Misses: 0 / 5</p>
+    
+    <!-- Game Container -->
+    <div id="game-container"></div>
+
+    <!-- Restart Button -->
+    <button id="restart-btn" onclick="restartGame()">
+        <i class="fas fa-undo"></i> Play Again
+    </button>
+
+   
+    <script src="../js/scripts/target shooter.js"></script>
+</body>
+</html>

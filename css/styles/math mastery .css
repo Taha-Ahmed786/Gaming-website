@@ -1,0 +1,100 @@
+   body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1c1c1c, #3e3e3e);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .game-container {
+            background: linear-gradient(145deg, #444, #222);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            width: 400px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #ff9800;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .question {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .answer-input {
+            font-size: 1.5rem;
+            padding: 15px;
+            margin: 15px 0;
+            width: 80%;
+            border: 2px solid #ff9800;
+            border-radius: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .answer-input:focus {
+            border-color: #4caf50;
+            outline: none;
+            background-color: #444;
+        }
+
+        .button {
+            background: linear-gradient(145deg, #ff9800, #ff5722);
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            width: 85%;
+            margin-top: 20px;
+            text-transform: uppercase;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(145deg, #ff5722, #e64a19);
+            transform: scale(1.05);
+        }
+
+        .feedback {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .success {
+            color: #4caf50;
+        }
+
+        .error {
+            color: #f44336;
+        }

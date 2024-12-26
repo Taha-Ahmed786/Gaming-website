@@ -1,0 +1,76 @@
+ body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        #score, #level {
+            font-size: 1.5em;
+            color: white;
+            padding: 10px;
+            background-color: #e74c3c;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        #score {
+            background-color: #e74c3c;
+        }
+
+        #level {
+            background-color: #8e44ad;
+        }
+
+        #game-container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            background-color: #f39c12;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card.flipped {
+            background-color: #2ecc71;
+            transform: scale(1.1);
+        }
+
+        .card.matched {
+            background-color: #3498db;  /* Changed matched color to blue */
+            pointer-events: none;
+            transform: scale(1.1);
+        }
+
+        #game-over {
+            font-size: 2.5em;
+            color: #e74c3c;
+            color: #e74c3c;
+            display: none;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #ffebf0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }

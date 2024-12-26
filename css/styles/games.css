@@ -1,0 +1,136 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #000000;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s;
+            text-transform: capitalize;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('../images/banner1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 70px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+
+        .game-list p{
+	        color: #FCEAEA;
+        }
+        /* Featured Games Section */
+        .featured-games {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .featured-games h2 {
+            font-size: 2.5em;
+            color: blue;
+        }
+
+
+
+        .game-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 90px;
+        }
+
+        .game-list a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .game-list img {
+            width: 200px;
+            height: 150px;
+            border-radius: 50px;
+            transition: transform 0.5s ease;
+        }
+
+        .game-list img:hover {
+            transform: scale(1.05);
+        }
+
+        .game-list p {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }

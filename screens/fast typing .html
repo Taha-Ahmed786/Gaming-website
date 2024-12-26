@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Typing Challenge</title>
+
+    <link href="../css/styles/fast typing.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Fast Typing Challenge </h1>
+        <p>Type the word below as fast as you can! 🚀</p>
+        <div id="word">Hello</div>
+        <input type="text" id="inputField" placeholder="Start typing..." autofocus>
+        <div id="timer">Time: 50</div>
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+        <button id="startButton" onclick="startGame()">Start Game 🏁</button>
+        <button class="hidden" id="resetButton" onclick="resetGame()">Play Again 🔄</button>
+    </div>
+
+    
+    <script src="../js/scripts/fast typing.js"></script>
+</body>
+</html>
